@@ -1,0 +1,11 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: lightblue;
+}
+
+header h1 {
+    font-weight: bolder; 
+}
