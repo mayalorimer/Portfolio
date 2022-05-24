@@ -9,3 +9,10 @@ header {
 header h1 {
     font-weight: bolder; 
 }
+
+img {
+    height: 800px;
+    width: 50%; 
+    text-align: center;
+    margin: 5px 5px; 
+}
