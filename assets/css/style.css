@@ -1,18 +1,62 @@
 * {
     font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+
+body {
+    background-color: rosybrown;
 }
 
 header {
+    padding: 20px;
     background-color: lightblue;
+    color: #ffffff; 
 }
 
 header h1 {
     font-weight: bolder; 
+    display: inline-block;
+    font-size: 75px; 
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px; 
 }
 
 img {
-    height: 800px;
-    width: 50%; 
+    object-fit:contain; 
+    width: 100%; 
     text-align: center;
     margin: 5px 5px; 
+}
+
+
+/* Formatting for contact me section */
+#contactMe h2 {
+    display: inline-block;
+}
+
+#contactMe ul {
+    list-style-type: none;
+    display: flex;
+}
+
+#contactMe ul li {
+    display: inline-block;
+    margin-left: 20px;
+    justify-content: space-evenly;  
+
 }
