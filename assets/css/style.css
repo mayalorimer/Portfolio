@@ -1,8 +1,5 @@
 * {
-    font-family: 'Courier New', Courier, monospace
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0; 
+    font-family:Georgia, 'Times New Roman', Times, serif; 
 }
 
 body {
@@ -34,13 +31,55 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     margin-left: 20px; 
+    font-size: 30px;
 }
 
-img {
+.cover {
     object-fit:contain; 
     width: 100%; 
     text-align: center;
     margin: 5px 5px; 
+}
+
+
+/* Formatting for the work section images */
+/* https://stackoverflow.com/questions/35019577/overlay-figcaption-on-img */
+#Horiseon img {
+    width: 400px;
+    clear: left;
+    margin-bottom: 1px;
+    margin-right: 10px;
+}
+
+.work {
+    display: flex;
+}
+
+.work ul { 
+    flex: 1 0 0;
+    display: flex; 
+    flex-wrap: wrap;  
+}
+
+.work li {
+    display: inline-block;
+    justify-content: space-evenly; 
+}
+
+/* adds a highlight when selected*/
+.shadow:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+#Horiseon {
+    flex: 1 0 200px; 
+}
+
+#Filler1 img,
+#Filler2 img {
+    height: 200px;
+    width: 200px;
 }
 
 
