@@ -21,6 +21,19 @@ header {
     background-color: #618685;
 }
 
+/* adds lines after the h2 headings for design */
+/* inspired from https://www.w3docs.com/snippets/css/how-to-add-lines-before-and-after-heading-text.html */
+h2:after{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 5px;
+    background: black;
+    right: 0;
+    top: 50%
+    position: absolute; 
+}
+
 /* Formatting for portfolio title */
 header h1 {
     font-weight: bolder; 
@@ -61,19 +74,29 @@ header nav ul li {
     margin-right: 10px;
 }
 
-.work {
+#work {
     display: flex;
 }
 
-.work ul { 
+#work ul { 
     flex: 1 0 0;
     display: flex; 
     flex-wrap: wrap;  
 }
 
-.work li {
+#work li {
     display: inline-block;
     justify-content: space-evenly; 
+}
+
+/* Sets the first project to take up twice as much space if available */
+#Horiseon {
+    flex: 2; 
+}
+
+#Filler1,
+#Filler2 {
+    flex: 1; 
 }
 
 /* adds a highlight when selected*/
@@ -90,6 +113,10 @@ header nav ul li {
 }
 
 /* Formatting for contact me section */
+#contactMe {
+    width: 100%;
+}
+
 #contactMe h2 {
     display: inline-block;
 }
@@ -97,11 +124,12 @@ header nav ul li {
 #contactMe ul {
     list-style-type: none;
     display: flex;
+    font-size: 20px; 
 }
 
 #contactMe ul li {
     display: inline-block;
     margin-left: 20px;
-    justify-content: space-evenly;  
+    justify-content: space-between;  
 
 }
