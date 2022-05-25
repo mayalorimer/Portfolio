@@ -8,17 +8,17 @@ HEX: #618685
 
 
 * {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
-    background-color: #d5f4e6;
+    background-color: #C8B7A6;
 }
 
 /* Header background block */
 header {
     padding: 20px;
-    background-color: #618685;
+    background-color: #703F37;
 }
 
 /* adds lines after the h2 headings for design */
@@ -31,14 +31,13 @@ h2:after{
     background: black;
     right: 0;
     top: 50%
-    position: absolute; 
 }
 
 /* Formatting for portfolio title */
 header h1 {
-    font-weight: bolder; 
+    font-weight: 900; 
     display: inline-block;
-    font-size: 75px; 
+    font-size: 100px; 
 }
 
 /* Header navigation links formatting */
@@ -67,7 +66,9 @@ header nav ul li {
 
 
 /* Formatting for the work section images */
-#Horiseon img {
+#Horiseon img,
+#Filler1 img,
+#Filler2 img {
     width: 400px;
     clear: left;
     margin-bottom: 1px;
@@ -104,12 +105,6 @@ header nav ul li {
 #Filler1:hover img,
 #Filler2:hover {
      box-shadow: 0 0 5px 5px #f2fcf8;
-}
-
-#Filler1 img, 
-#Filler2 img {
-    width: 200px;
-    height: 200px; 
 }
 
 /* Formatting for contact me section */
