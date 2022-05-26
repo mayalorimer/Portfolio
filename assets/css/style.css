@@ -134,6 +134,7 @@ header nav ul li {
 /* Formatting for contact me section */
 #contactMe {
     width: 100%;
+    display: flex;
 }
 
 #contactMe h2 {
@@ -142,14 +143,15 @@ header nav ul li {
 
 #contactMe ul {
     list-style-type: none;
-    display: flex;
-    font-size: 20px; 
+   /* display: flex; */
+    font-size: 30px; 
+    justify-content: space-evenly;  
 }
 
 #contactMe ul li {
     display: inline-block;
-    margin-left: 20px;
-    justify-content: space-between;  
+    padding: 10px;
+    margin: 20px;
 }
 
 /* Adjusts for smaller screen size */
