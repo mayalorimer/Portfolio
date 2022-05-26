@@ -12,3 +12,5 @@ This repository contains a portfolio showcasing my background, how to contact me
  - CSS
 
 ## Screenshot
+
+![alt text](./assets/portfolio.jpg)
