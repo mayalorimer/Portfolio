@@ -165,9 +165,4 @@ header nav ul li {
     #Horiseon {
         flex: 0 0 500px; 
     }
-
-    #contactMe h2, 
-    #contactMe ul li {
-        display: auto; 
-    }
   }
