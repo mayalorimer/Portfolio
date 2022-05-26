@@ -21,6 +21,11 @@ header {
     background-color: #703F37;
 }
 
+/* setting font size for h2 */
+h2 {
+    font-size: 50px;
+}
+
 /* adds lines after the h2 headings for design */
 /* inspired from https://www.w3docs.com/snippets/css/how-to-add-lines-before-and-after-heading-text.html */
 h2:after{
@@ -76,7 +81,24 @@ header nav ul li {
 
 #Horiseon {
     padding: 10px;
-    flex: 0 0 1000px; 
+    flex: 0 0 1025px; 
+}
+
+/* overlays the title onto the image */
+#Horiseon p,
+#Filler1 p,
+#Filler2 p {
+    background-color: #703F37;
+    border-style: solid;
+    border-color: black; 
+    color: white;
+    font-size: 30px; 
+    font-weight: bolder; 
+    padding: 5px;
+    margin: 5px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 1; 
 }
 
 #Horiseon img {
@@ -94,24 +116,6 @@ header nav ul li {
     width: 100%;
 }
 
-/*
-#Horiseon img {
-    width: 800px;
-    clear: left;
-    margin-bottom: 1px;
-    margin-right: 10px;
-} 
-
-#Filler1 img,
-#Filler2 img {
-    width: 400px;
-    clear: left;
-    margin-bottom: 1px;
-    margin-right: 10px;
-}
- */
-
-/* Sets the first project to take up twice as much space if available */
 
 /* adds a highlight when selected*/
 #Horiseon:hover a img,
@@ -141,6 +145,7 @@ header nav ul li {
     justify-content: space-between;  
 }
 
+/* Adjusts for smaller screen size */
 @media screen and (max-width: 768px) {
     #work, 
     #contactMe {
