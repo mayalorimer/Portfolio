@@ -66,12 +66,41 @@ header nav ul li {
 
 
 /* Formatting for the work section images */
+#work {
+    flex: 4; 
+    padding: 20px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; 
+}
+
+#Horiseon {
+    padding: 10px;
+    flex: 0 0 1000px; 
+}
+
+#Horiseon img {
+    width: 100%;
+}
+
+#Filler1,
+#Filler2 {
+    padding: 10px;
+    flex: 0 0 500px; 
+}
+
+#Filler1 img,
+#Filler2 img {
+    width: 100%;
+}
+
+/*
 #Horiseon img {
     width: 800px;
     clear: left;
     margin-bottom: 1px;
     margin-right: 10px;
-}
+} 
 
 #Filler1 img,
 #Filler2 img {
@@ -80,31 +109,9 @@ header nav ul li {
     margin-bottom: 1px;
     margin-right: 10px;
 }
-
-#work {
-    display: flex;
-}
-
-#work ul { 
-    flex: 1 0 0;
-    display: flex; 
-    flex-wrap: wrap;  
-}
-
-#work li {
-    display: inline-block;
-    justify-content: space-evenly; 
-}
+ */
 
 /* Sets the first project to take up twice as much space if available */
-#Horiseon {
-    flex: 2; 
-}
-
-#Filler1,
-#Filler2 {
-    flex: 1; 
-}
 
 /* adds a highlight when selected*/
 #Horiseon:hover a img,
@@ -132,5 +139,21 @@ header nav ul li {
     display: inline-block;
     margin-left: 20px;
     justify-content: space-between;  
-
 }
+
+@media screen and (max-width: 768px) {
+    #work, 
+    #contactMe {
+        flex-direction: column; 
+        justify-content: center; 
+    }
+
+    #Horiseon {
+        flex: 0 0 500px; 
+    }
+
+    #contactMe h2, 
+    #contactMe ul li {
+        display: auto; 
+    }
+  }
