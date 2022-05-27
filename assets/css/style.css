@@ -17,8 +17,9 @@ body {
 
 /* Header background block */
 header {
-    padding: 20px;
+    padding: 5px;
     background-color: #945349;
+    width: 100%; 
 }
 
 /* setting font size for h2 */
