@@ -160,6 +160,14 @@ header nav ul li {
         justify-content: center; 
     }
 
+    h2 {
+        text-align: center; 
+    }
+
+    h2:after {
+        content: none;
+    }
+
     #Horiseon {
         flex: 0 0 500px; 
     }
